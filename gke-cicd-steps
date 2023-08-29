@@ -1,0 +1,12 @@
+1) Create GKE Cluster from Cloud Shell or Console:-
+   gcloud container clusters create cicd-cluster(Cluster name) --machine-type=g1-small(choose the machine image) --num-nodes=1(choose no.of nodes you required) --zone=northamerica-northeast2(choose the region)
+2) Deploy some sample Docker Images.
+3) Create Load Balancer based service.
+4)Create Source Code Repos.
+5) Add Python code, DockerFile, Cloudbuild.yaml
+6) Cloudbuild.yaml consists:
+    a) Clone repo
+    b) Build Image
+    c) Push Image
+    d) Update new image
+7) Create Cloud Build Trigger
